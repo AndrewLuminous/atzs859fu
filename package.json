@@ -1,0 +1,29 @@
+{
+  "name": "atzs859fu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Модуль связи с алкотестером ATZS-859FU для терминала на Electron",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "npm run build && node --test dist/test/protocol.test.js dist/test/alcotester.test.js",
+    "find": "node dist/examples/cli.js --find",
+    "cli": "node dist/examples/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "serialport": "^12.0.0"
+  },
+  "devDependencies": {
+    "@serialport/binding-mock": "10.2.2",
+    "@types/node": "22.20.5",
+    "serialport": "12.0.0",
+    "typescript": "5.9.3"
+  }
+}

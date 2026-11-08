@@ -1,0 +1,4 @@
+node_modules/
+dist/
+atzs-logs/
+*.log
